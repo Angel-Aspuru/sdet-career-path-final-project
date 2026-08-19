@@ -8,7 +8,7 @@ test.describe('POST /api/verifyLogin', () => {
   let account: CreateAccountPayload;
 
   test.beforeAll(async ({ playwright }) => {
-    const context = await playwright.request.newContext({ baseURL: process.env.API_BASE_URL ?? 'https://automationexercise.com' });
+    const context = await playwright.request.newContext({ baseURL: process.env.API_BASE_URL || 'https://automationexercise.com' });
     apiClient = new ApiClient(context);
     account = buildTestAccountPayload('verify-login');
     const created = await apiClient.createAccount(account);
