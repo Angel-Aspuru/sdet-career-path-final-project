@@ -1,0 +1,28 @@
+node_modules/
+dist/
+
+# Playwright
+playwright-report/
+test-results/
+blob-report/
+playwright/.cache/
+
+# env
+.env
+.env.local
+
+# Mobile (WebdriverIO/Appium)
+mobile/node_modules/
+mobile/logs/
+mobile/allure-results/
+mobile/allure-report/
+mobile/reports/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+*.log
+
+# Claude Code session state
+.claude/
